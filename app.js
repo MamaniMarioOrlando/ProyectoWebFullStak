@@ -2,9 +2,12 @@ require('dotenv').config()
 const createError = require('http-errors');
 const express = require('express');
 const logger = require('morgan');
+//punto de entrada
+const connectDB = require('./dataBase/config');
 
 const app = express();
-
+//Se ejecuta el punto de entrada
+connectDB();
 // view engine setup
 
 app
