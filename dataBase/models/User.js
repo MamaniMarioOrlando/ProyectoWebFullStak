@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const {hash, compare} =require('bcryptjs')
 
-const useShema =new mongoose.Schema({
+const userShema =new mongoose.Schema({
     name : {
         type : String,
         required : true,
